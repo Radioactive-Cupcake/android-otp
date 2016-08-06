@@ -8,6 +8,7 @@
 package com.radioactivecupcake.apps.otp;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -119,6 +120,13 @@ public class SplashActivity extends AppCompatActivity {
         // created, to briefly hint to the user that UI controls
         // are available.
         delayedHide(100);
+        // Launch the main entry activity from splash
+        mHideHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startActivity(new Intent(this, MainActivity.class));
+            }
+        }, 200);
     }
 
     private void toggle() {
