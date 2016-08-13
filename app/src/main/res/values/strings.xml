@@ -10,4 +10,5 @@
     <string name="action_settings">Settings</string>
     <string name="nav_keys_title">Keys</string>
     <string name="nav_crypt_title">Encrypt/Decrypt</string>
+    <string name="motto"></string>
 </resources>
